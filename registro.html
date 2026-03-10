@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Herencia y Tierra</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body style="display: flex; flex-direction: column; background-color: #C0BFB0; overflow-x: hidden; align-items: center; zoom: 100%;">
+        <div id = "container" style="top: 5%">
+            <h1>Registro</h1> <!--titulo del evento-->
+            <section>
+            <h2 class="subtitulo-seccion">Confirmar Asistencia</h2>
+            <p id = "texto-extra">Por favor, confírmanos tu asistencia antes del [Fecha Límite] para organizar todo perfectamente.</p>
+            
+            <form class="formulario-rsvp" id="rsvpForm" action="https://formsubmit.co/diegoarcelario57@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="https://tupaginaweb.com/gracias.html">
+                <input type="hidden" name="_subject" value="Nueva confirmación para Herencia y Tierra">
+
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="acompanantes">Número de Acompañantes (sin contarte a ti):</label>
+                    <select id="acompanantes" name="acompanantes">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        </select>
+                </div>
+
+                <div class="campo-formulario">
+                    <label for="alergias">¿Posees alguna alergia o restricción alimenticia?</label>
+                    <textarea id="alergias" name="alergias" rows="3" placeholder="Ej. Alergia a nueces, intolerancia a la lactosa, vegetariano..."></textarea>
+                </div>
+
+                <button type="submit" class="btn-enviar">Confirmar mi Asistencia</button>
+            </form>
+        </section>
+
+        </div>
+        <button id = "tres-barras"></button>
+        <div id = "barra">
+                <a href="./index.html" class="paginas">Inicio</a>
+                <a href="./evento.html" class="paginas">Platillos</a>
+                <a href="./informacion.html" class="paginas">Información</a>
+                <a href="./registro.html" class="paginas">Registro</a>
+        </div>
+        <script src="./inicio.js"></script>        
+    </body>
+</html>
